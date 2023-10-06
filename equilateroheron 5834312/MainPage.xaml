@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="equilateroheron_5834312.MainPage">
+
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label Text="Triangulo Equilatero"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   TextColor="Green"/>
+            <Image Source="triangulo.jpg"
+                   HeightRequest="200"
+                   WidthRequest="300"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Digite el lado A"
+                   FontSize="15"/>
+            <Entry x:Name="EntryA" Placeholder="Lado A"
+                   Keyboard="Numeric"/>
+
+            <Label Text="Digite el lado B"
+                   FontSize="15"/>
+            <Entry x:Name="EntryB" Placeholder="Lado B"
+                   Keyboard="Numeric"/>
+
+            <Label Text="Digite el lado C"
+                   FontSize="15"/>
+            <Entry x:Name="EntryC" Placeholder="Lado C"
+                   Keyboard="Numeric"/>
+
+            <Label Text="El area del triangulo es: "
+                   HorizontalOptions="Start"
+                   FontAttributes="Bold"
+                   TextColor="green"
+                   FontSize="18"
+                   x:Name="lblA"/>
+            <Button Text="Calcular"
+                    BackgroundColor="White"
+                    BorderColor="green"
+                    BorderWidth="3"
+                    CornerRadius="30"
+                    Clicked="Button_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
